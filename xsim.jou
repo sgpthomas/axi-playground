@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May  8 15:28:05 2021
+# Process ID: 700555
+# Current directory: /home/samthomas/Research/AXI/MyAxi
+# Command line: xsim -source {xsim.dir/xilinx_u50_gen3x16_xdma_201920_3-0-vadd.hw_emu.wdb/xsim_script.tcl}
+# Log file: /home/samthomas/Research/AXI/MyAxi/xsim.log
+# Journal file: /home/samthomas/Research/AXI/MyAxi/xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/xilinx_u50_gen3x16_xdma_201920_3-0-vadd.hw_emu.wdb/xsim_script.tcl
+add_wave {{/emu_wrapper/emu_i/Toplevel_1/m00_axi}} {{/emu_wrapper/emu_i/Toplevel_1/s_axi_control}} 

@@ -1,0 +1,525 @@
+/*
+
+Xilinx xsim v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 700555
+License: Customer
+
+Current time: 	Sat May 08 15:28:15 EDT 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: NAME="Pop!_OS"
+OS Version: 5.11.0-7614-generic
+OS Architecture: amd64
+Available processors (cores): 12
+
+Display: :1
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 13 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/samthomas/Drive/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/home/samthomas/Drive/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	samthomas
+User home directory: /home/samthomas
+User working directory: /home/samthomas/Research/AXI/MyAxi
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/samthomas/Drive/Xilinx/Vivado
+HDI_APPROOT: /home/samthomas/Drive/Xilinx/Vivado/2019.2
+RDI_DATADIR: /home/samthomas/Drive/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /home/samthomas/Drive/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/samthomas/.Xilinx/xsim/2019.2/vivado.xml
+Vivado preferences directory: /home/samthomas/.Xilinx/xsim/2019.2/
+Vivado layouts directory: /home/samthomas/.Xilinx/xsim/2019.2/layouts
+PlanAhead jar file location: 	/home/samthomas/Drive/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/samthomas/Research/AXI/MyAxi/xsim.log
+Vivado journal file location: 	/home/samthomas/Research/AXI/MyAxi/xsim.jou
+Engine tmp dir: 	./.Xil/xsim-700555-thelio
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/samthomas/Drive/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /home/samthomas/Drive/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /home/samthomas/Drive/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /home/samthomas/Drive/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	194 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,089 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bB (cr):  Sourcing Tcl script 'xsim.dir/xilinx_u50_gen3x16_xdma_201920_3-0-vadd.hw_emu.wdb/xsim_script.tcl' : addNotify
+// Tcl Message: source xsim.dir/xilinx_u50_gen3x16_xdma_201920_3-0-vadd.hw_emu.wdb/xsim_script.tcl 
+// Tcl Message: # set_param project.enableReportConfiguration 0 # load_feature core 
+// TclEventType: LOAD_FEATURE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: # current_fileset 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 119 MB (+122029kb) [00:00:05]
+// [Engine Memory]: 1,030 MB (+928254kb) [00:00:05]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/samthomas/Drive/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [Engine Memory]: 1,100 MB (+19682kb) [00:00:06]
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: # xsim {xilinx_u50_gen3x16_xdma_201920_3-0-vadd.hw_emu.wdb} -autoloadwcfg 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+dismissDialog("Sourcing Tcl script 'xsim.dir/xilinx_u50_gen3x16_xdma_201920_3-0-vadd.hw_emu.wdb/xsim_script.tcl'"); // bB (cr)
+// TclEventType: STOP_PROGRESS_DIALOG
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 57 MB. Current time: 5/8/21, 3:28:17 PM EDT
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "emu_i ; emu ; Verilog Module", 1, "emu_i", 0, true); // c (c, cr) - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "emu_i ; emu ; Verilog Module", 1, "emu_i", 0, true); // c (c, cr) - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "Toplevel_1 ; emu_Toplevel_1_0 ; Verilog Module", 3, "Toplevel_1", 0, true); // c (c, cr) - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "Toplevel_1 ; emu_Toplevel_1_0 ; Verilog Module", 3, "Toplevel_1", 0, true); // c (c, cr) - Node
+// TclEventType: SIMULATION_REQUEST_SELECT_SCOPES
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "m00_axi ;  ; Protocol Instance", 38, "m00_axi", 0, true); // c (c, cr) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "s_axi_control ;  ; Protocol Instance", 39, "s_axi_control", 0, true, true, false, false, false, false); // c (c, cr) - Shift Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "s_axi_control ;  ; Protocol Instance", 39, "s_axi_control", 0, true, false, false, false, true, false); // c (c, cr) - Popup Trigger - Node
+selectMenuItem((HResource) null, "Add to Wave Window"); // ai (ao, cr)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,224 MB (+72489kb) [00:00:14]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,291 MB (+5810kb) [00:00:15]
+// TclEventType: WAVEFORM_MODEL_EVENT
+// bB (cr):  Add Wave : addNotify
+// Tcl Message: add_wave {{/emu_wrapper/emu_i/Toplevel_1/m00_axi}} {{/emu_wrapper/emu_i/Toplevel_1/s_axi_control}}  
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,344 MB. GUI used memory: 98 MB. Current time: 5/8/21, 3:28:24 PM EDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+dismissDialog("Add Wave"); // bB (cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 591, 124); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,383 MB (+29351kb) [00:00:18]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 590, 197); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,379 MB. GUI used memory: 87 MB. Current time: 5/8/21, 3:28:28 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,379 MB. GUI used memory: 70 MB. Current time: 5/8/21, 3:28:30 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,379 MB. GUI used memory: 64 MB. Current time: 5/8/21, 3:28:30 PM EDT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi]", 0); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes]", 2); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 387, 144); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 101 MB. Current time: 5/8/21, 3:28:35 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,381 MB. GUI used memory: 73 MB. Current time: 5/8/21, 3:28:36 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 78 MB. Current time: 5/8/21, 3:28:37 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,407 MB. GUI used memory: 64 MB. Current time: 5/8/21, 3:28:38 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,407 MB. GUI used memory: 66 MB. Current time: 5/8/21, 3:28:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,407 MB. GUI used memory: 76 MB. Current time: 5/8/21, 3:28:40 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,408 MB. GUI used memory: 76 MB. Current time: 5/8/21, 3:28:40 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 240, 90); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,408 MB. GUI used memory: 72 MB. Current time: 5/8/21, 3:28:41 PM EDT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes, Row 0]", 3); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes, Row 0]", 3); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,408 MB. GUI used memory: 83 MB. Current time: 5/8/21, 3:28:44 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes]", 2); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes]", 2); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes]", 2); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,419 MB. GUI used memory: 95 MB. Current time: 5/8/21, 3:28:45 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels]", 3); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 332, 243); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,421 MB. GUI used memory: 90 MB. Current time: 5/8/21, 3:28:49 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 280, 245); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 72 MB. Current time: 5/8/21, 3:28:50 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 221, 242); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 72 MB. Current time: 5/8/21, 3:28:50 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 75 MB. Current time: 5/8/21, 3:28:51 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 86 MB. Current time: 5/8/21, 3:28:51 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 89 MB. Current time: 5/8/21, 3:28:52 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 236, 216); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 87 MB. Current time: 5/8/21, 3:28:53 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 79 MB. Current time: 5/8/21, 3:28:54 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Address]", 7, true); // a (r, cr) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data]", 8, true); // a (r, cr) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,422 MB. GUI used memory: 85 MB. Current time: 5/8/21, 3:28:57 PM EDT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Address]", 7); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data]", 11); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 91 MB. Current time: 5/8/21, 3:29:01 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data, .WREADY]", 14, false); // a (r, cr)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data, .WLAST]", 15, false); // a (r, cr)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data, .WREADY]", 14, false); // a (r, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 102 MB. Current time: 5/8/21, 3:29:05 PM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data, .WVALID]", 13, false); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data, .WREADY]", 14, false); // a (r, cr)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data, .WVALID]", 13, false); // a (r, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 100 MB. Current time: 5/8/21, 3:29:07 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Channels, Write Data, .WDATA[31:0]]", 12, true); // a (r, cr) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 95 MB. Current time: 5/8/21, 3:29:11 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:11 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:12 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:12 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 75 MB. Current time: 5/8/21, 3:29:13 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:13 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:13 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:14 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,423 MB. GUI used memory: 75 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 75 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 76 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,469 MB (+17440kb) [00:01:06]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 75 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:15 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 75 MB. Current time: 5/8/21, 3:29:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 75 MB. Current time: 5/8/21, 3:29:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 73 MB. Current time: 5/8/21, 3:29:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 73 MB. Current time: 5/8/21, 3:29:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 73 MB. Current time: 5/8/21, 3:29:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 73 MB. Current time: 5/8/21, 3:29:16 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:17 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 73 MB. Current time: 5/8/21, 3:29:17 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,469 MB. GUI used memory: 74 MB. Current time: 5/8/21, 3:29:17 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 14 seconds
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes]", 2); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes, Row 0]", 3); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,473 MB. GUI used memory: 113 MB. Current time: 5/8/21, 3:29:26 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes, Row 0]", 3); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes, Row 0]", 3, true); // a (r, cr) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Writes]", 2, true); // a (r, cr) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,428 MB. GUI used memory: 64 MB. Current time: 5/8/21, 3:29:30 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,428 MB. GUI used memory: 77 MB. Current time: 5/8/21, 3:29:32 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,428 MB. GUI used memory: 68 MB. Current time: 5/8/21, 3:29:32 PM EDT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Reads]", 1); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Reads]", 1); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Reads]", 1); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, m00_axi, Outstanding Reads]", 1); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,429 MB. GUI used memory: 105 MB. Current time: 5/8/21, 3:29:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,429 MB. GUI used memory: 69 MB. Current time: 5/8/21, 3:29:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,429 MB. GUI used memory: 68 MB. Current time: 5/8/21, 3:29:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,428 MB. GUI used memory: 64 MB. Current time: 5/8/21, 3:29:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,429 MB. GUI used memory: 68 MB. Current time: 5/8/21, 3:29:39 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,431 MB. GUI used memory: 68 MB. Current time: 5/8/21, 3:29:40 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,431 MB. GUI used memory: 68 MB. Current time: 5/8/21, 3:29:40 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 466, 215); // n (o, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,431 MB. GUI used memory: 70 MB. Current time: 5/8/21, 3:29:41 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,432 MB. GUI used memory: 70 MB. Current time: 5/8/21, 3:29:44 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,433 MB. GUI used memory: 64 MB. Current time: 5/8/21, 3:29:45 PM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,440 MB. GUI used memory: 64 MB. Current time: 5/8/21, 3:59:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 59 MB. Current time: 5/8/21, 4:29:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 4:59:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 5:29:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 5:59:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 6:29:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 6:59:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 7:29:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 7:59:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 8:29:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 8:59:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 9:29:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 9:59:47 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 10:29:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 10:59:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 11:29:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/8/21, 11:59:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 12:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 12:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 1:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 1:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 2:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 2:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 3:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 3:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 4:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 4:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 5:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 5:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 6:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 6:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 7:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 7:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 8:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 8:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 9:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 9:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 10:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 10:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 11:29:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 11:59:48 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 12:29:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 12:59:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 1:29:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 1:59:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 47 MB. Current time: 5/9/21, 2:29:49 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 59 MB. Current time: 5/9/21, 2:59:49 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,380 MB. GUI used memory: 59 MB. Current time: 5/9/21, 3:29:49 PM EDT
